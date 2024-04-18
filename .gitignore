@@ -10,4 +10,4 @@ create_users_table.py
 
 # Ignore virtual environment
 venv/
-#.env
+.env
