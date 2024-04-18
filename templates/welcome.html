@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Center the text */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        /* Style for the welcome message */
+        .welcome-message {
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        /* Position the logout button to the right */
+        .logout-button {
+            position: absolute;
+            top: 10px; /* Adjust top positioning as needed */
+            right: 10px; /* Adjust right positioning as needed */
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome!</h2>
+    <p>You have successfully logged in.</p>
+    
+    <!-- Logout Form -->
+    <form method="post" action="{{ url_for('logout') }}" class="logout-button">
+        <button type="submit">Logout</button>
+    </form>
+
+    <!-- Your personalized welcome message -->
+    <div class="welcome-message">
+        <p>
+            Hello, I'm a Python enthusiast and a hacking enthusiast. I love exploring the depths of Python programming and experimenting with new techniques and libraries.
+        </p>
+        <p>
+            When I'm not coding, you can find me delving into cybersecurity challenges and honing my hacking skills. I enjoy the thrill of solving complex problems and uncovering vulnerabilities.
+        </p>
+        <p>
+            However, there are times when I feel bored and uncertain about my direction in life. But through my passion for programming and hacking, I find purpose and excitement in the endless possibilities that technology offers.
+        </p>
+    </div>
+
+    <!-- Example: Add a button to trigger JavaScript functionality -->
+    <button id="myButton">Click me</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

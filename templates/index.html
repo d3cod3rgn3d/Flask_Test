@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HomePage</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css') }}">	
+</head>
+<body>
+    <h2>Welcome to Flask Authentication</h2>
+    <p>Please choose an option:</p>
+    <ul>
+        <li style="font-size: 24px;"><a href="{{ url_for('register') }}">Register</a></li>
+        <li style="font-size: 24px;"><a href="{{ url_for('login') }}">Login</a></li>
+    </ul>
+</body>
+</html>

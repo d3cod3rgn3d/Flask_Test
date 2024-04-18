@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css') }}">
+</head>
+<body>
+    <h2>Register</h2>
+
+	{% if error_message %}
+	<p style="color: red;">{{ error_message }}</p>
+	{% endif %} 
+
+    <form method="post" action="{{ url_for('register') }}">
+		<input type="text" name="username" placeholder="Username" pattern="[A-Za-z0-9_\.]*" title="Only alphanumeric characters, underscore, and dot (.) symbols are allowed" maxlength="16" required><br>
+		<input type="email" name="email" maxlength="45" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}" title="Enter a valid email address" required><br>
+        <input type="password" name="password" maxlength="24" placeholder="Password" required><br>
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</body>
+</html>

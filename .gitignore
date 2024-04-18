@@ -1,0 +1,13 @@
+# Ignore database file
+database.db
+
+# Ignore Python bytecode cache
+__pycache__/
+
+# Ignore specific Python scripts
+delete_data.py
+create_users_table.py
+
+# Ignore virtual environment
+venv/
+.env

@@ -1,0 +1,63 @@
+/* Common styles for all webpages */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background */
+    color: #333;  /* Dark text for better contrast */
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Increase the base font size */
+}
+
+/* Hyperlinks */
+a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:visited {
+    color: #551a8b; /* Visited link color */
+}
+
+/* Heading */
+h2 {
+    color: #007bff;
+    font-size: 28px; /* Increase the font size for headings */
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%; /* Adjusted width for mobile */
+    padding: 16px; /* Increased padding for better touch interaction */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 28px; /* Increase font size for form elements */
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 28px; /* Increase font size for paragraphs */
+}
